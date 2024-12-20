@@ -1,38 +1,111 @@
-.App {
-  text-align: center;
+*{background-color: #121212;
+color: #ffffff; 
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.no-underline {
+  text-decoration: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container_header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.header_part {
+  padding: 40px;
+}
+
+.text-center {
+  margin: 10px 30px 10px 30px;
+  align-content: center;
+  align-items: center;
+  height: 90vh;
+}
+
+.text-center_footer {
+
+  display: flex;
+  flex-direction: column;
+
+}
+
+/* for box Shadow */
+.custom-box {
+  border: 1px solid #eceeef;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease;
+}
+
+.custom-box:hover {
+  box-shadow: 0 8px 16px rgba(199, 197, 197, 0.3);
+}
+
+.movie-list {
+  display: flex;
+  align-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0px 20px 0px 60px;
+  gap: 20px;
+}
+
+.Torrent_group {
+  display: flex;
+}
+
+.SearchsubmitButton {
+  margin-right: 10px;
+}
+
+/* for margin in the movie cards */
+.txtSpace {
+  margin-left: 40px;
+}
+
+.txt div {
+  margin-left: 40px;
+}
+
+.linkSpace {
+  margin-left: 40px;
+}
+.card-body{
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* aSIDE */
+.app-container {
+  display: flex;
+}
+.list-group-item{
+   background-color: #000;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.right-sidebar {
+  margin-left: 3px;
+  margin-right: 20px;
+}
+
+@media (max-width:768px) {
+
+  .navbar .nav-link {
+    padding: 5px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .navbar {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .SearchsubmitButton {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .SearchsubmitButton .form-control {
+    margin-bottom: 10px;
   }
 }

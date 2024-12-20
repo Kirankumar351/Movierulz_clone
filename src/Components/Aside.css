@@ -1,0 +1,13 @@
+.card-header{
+    background-color: black;
+}
+.custom-text{
+    background-color: black;
+    color: white;
+}
+.right-sidebar {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 100%;
+}
